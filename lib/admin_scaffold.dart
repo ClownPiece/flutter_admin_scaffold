@@ -213,9 +213,9 @@ class _AdminScaffoldState extends State<AdminScaffold>
     }
 
     final leading = sideBar != null
-        ? IconButton(
-            icon: appBar.leading ?? const Icon(Icons.menu),
-            onPressed: _toggleSidebar,
+        ? InkWell(
+            icon: appBar.leading,
+            onTap: _toggleSidebar,
           )
         : appBar.leading;
     final shadowColor = Colors.transparent;
