@@ -214,7 +214,7 @@ class _AdminScaffoldState extends State<AdminScaffold>
 
     final leading = sideBar != null
         ? InkWell(
-            icon: appBar.leading ?? Container(),
+            child: appBar.leading ?? Container(),
             onTap: _toggleSidebar,
           )
         : appBar.leading;
